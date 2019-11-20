@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = 'utf-8'>
+	<meta http-equiv = 'X-UA-Compatible' content = 'IE=edge'>
+	<title>数据结构</title>
+	<meta name = 'viewport' content = 'width=device-width, initial-scale=1'>
+	<link rel = 'stylesheet' type = 'text/css' media = 'screen' href = 'main.css'>
+</head>
+<body>
+    <!-- 主界面 -->
+	<div id = "main">
+		<button id = "importbtn">导入</button>
+		<button id = "newbtn">新建</button>
+		<button id = "viewbtn">查看</button>
+		<button id = "lookpicture">查看网络计划图</button>
+	</div>
+
+	<!-- 网络计划图 -->
+	<div id = "picture">
+		<button name = "back">返回</button>
+	</div>
+
+	<!-- 导入数据界面 -->
+	<div id = "import">
+		已保存的数据<br>
+		<div class="savelist">
+		</div>
+		<button>加载</button>
+		<button name = "back">返回</button>
+	</div>
+
+	<!-- 插入数据界面 -->
+	<div id="new">
+		请输入项目名称<input id="name"><br>
+		请输入所需要的最短时间时间<input id="shorttime"><br>
+		请输入所需要的最长时间<input id="longtime"><br>
+		<button id = "addbtn">添加</button>
+		<button name = "back">返回</button> 
+	</div>
+
+	<!-- 查看、修改数据界面 -->
+	<div id="view">
+		查询<br>
+		<div id = "search">
+			查询依据
+			<select id = "searchselect1">
+				<option value = "0">编号</option>
+				<option value = "1">名称</option>
+				<!-- <option value = "2">紧前事件</option> -->
+			</select>
+			<input id = "searchinput">
+			排序方式
+			<select id = "searchselect2">
+				<option value = "0">升序</option>
+				<option value = "1">降序</option>
+			</select>
+			<button id = "viewclick">查询</button>
+			<button name = "back">返回</button>
+		</div>		
+		修改<br>
+		<div class="modify">
+			修改依据
+			<select id = "modifyselect">
+				<option value = "0">编号</option>
+				<option value = "1">名称</option>
+				<!-- <option value = "2">紧前事件</option> -->
+			</select>
+			<input>
+			<button id = "modifyclick">修改</button>
+			<button name = "back">返回</button>
+		</div>		
+		删除<br>
+		<div class="delete">
+			删除依据
+			<select id = "deleteselect">
+				<option value = "0">编号</option>
+				<option value = "1">名称</option>
+				<!-- <option value = "2">紧前事件</option> -->
+			</select>
+			<input>
+			<button id = "deletecilck">删除</button>
+			<button name = "back">返回</button>            
+		</div>
+		<br>表格<br>
+		<div id = "viewlist"></div>
+	</div>
+
+	<script src = 'main.js'></script>
+</body>
+</html>
